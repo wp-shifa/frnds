@@ -7,6 +7,14 @@
   object-fit: cover;
   z-index: -2;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 
 /* Dark overlay for readability */
 body::before {
@@ -28,8 +36,10 @@ body::before {
 }
 .ready{
     display: flex;
-    height: 450px;
-    width: 450px;
+    max-width: 500px;
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -48,8 +58,10 @@ body::before {
     color: #fa0ebf;
 }
 .ready img{
-    height: 180px;
-    width: 180px;
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+
 }
 .ready p{
     font-size: 20px;
@@ -65,15 +77,19 @@ body::before {
     text-shadow: #d100d123 0px 0px 5px;
 }
 .btn{
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 20px;
     display: flex;
     gap: 20px;
     size: 16px;
     font-weight: bold;
+    text-align: center;
 }
 .btn button{
-    height: 40px;
-    width: 100px;
+    max-width: 100%;
+    padding:10px 20px;
+    height: 45px;
     border: none;
     background-color: #f825dc;
     color: #fff;
@@ -89,8 +105,9 @@ body::before {
 }
 .final{
     display: flex;
-    height: 800px;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
+    min-height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -177,8 +194,8 @@ body::before {
 }
 .happy{
     display: flex;
-    height: 400px;
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -188,8 +205,8 @@ body::before {
     box-shadow: 0 6px 10px rgba(224, 6, 188, 0.1);
 }
 .happy img{
-    height: 450px;
-    width: 400px;
+    width: 100%;
+    height: auto;
     border: #f825dc 2px solid;
     border-radius: 10px;
     box-shadow: #ff42d0 0px 0px 10px;
@@ -213,12 +230,15 @@ body::before {
     margin-bottom: 10px;
 }
 .promise-list{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
 }
 .promise-item{
+    flex-wrap: wrap;
+    font-size: 14px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -226,9 +246,11 @@ body::before {
 .promise-item img{
     height: 30px;
     width: 30px;
+    flex-shrink: 0;
 }
 .promise-item{
-    font-size: 18px;
+    flex-wrap: wrap;
+    font-size: 16px;
     color: #9a889b;
     font-weight: bold;
     text-shadow: #d100d123 0px 0px 5px;
@@ -236,4 +258,12 @@ body::before {
     border-radius: 10px;
     box-shadow: #ff42d0 0px 0px 5px;
     padding: 10px;
+}
+.no-msg {
+  display: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  color: #fa0ebf;
+  font-weight: bold;
 }

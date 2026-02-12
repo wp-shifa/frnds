@@ -17,11 +17,16 @@
         <p>ready for a sweet valentine's challenge?</p>
         <div class="btn">
             <button onclick="window.location.href='rosee.html'">Yes!</button>
-            <button>No</button>
-        </div>
+            <button onclick="showNoMessage()">No</button>
+             <p id="no-msg" class="no-msg">
+  Nope 😤 you can’t say no to this!</p>
 
         </div>
-    
-    </body>
+        </div>
+       <script>
+  function showNoMessage() {
+    document.getElementById("no-msg").style.display = "block";
+  }
+</script>
 </body>
 </html>
