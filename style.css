@@ -267,3 +267,259 @@ body::before {
   color: #fa0ebf;
   font-weight: bold;
 }
+/* Tablets and small laptops (768px and below) */
+@media (max-width: 768px) {
+    .container, .container-h {
+        padding: 10px;
+    }
+
+    .ready, .final {
+        padding: 25px 18px;
+    }
+
+    .ready h1, .final h1 {
+        font-size: 35px;
+    }
+
+    .ready h3, .final h3 {
+        font-size: 26px;
+    }
+
+    .ready p, .final p {
+        font-size: 18px;
+    }
+
+    .ready img {
+        max-width: 160px;
+    }
+
+    .final img {
+        max-height: 180px;
+        max-width: 180px;
+    }
+
+    .Memories img {
+        height: 130px;
+        width: 130px;
+    }
+
+    .gift .gift1 button {
+        max-width: 280px;
+        font-size: 15px;
+    }
+}
+
+/* Mobile phones (600px and below) */
+@media (max-width: 600px) {
+    .container, .container-h {
+        padding: 12px;
+    }
+
+    .ready, .final {
+        padding: 20px 15px;
+        max-width: 95%;
+    }
+
+    .ready h1, .final h1 {
+        font-size: 28px;
+    }
+
+    .ready h3, .final h3 {
+        font-size: 22px;
+    }
+
+    .ready p, .final p {
+        font-size: 16px;
+    }
+
+    .ready img {
+        max-width: 140px;
+    }
+
+    .final img {
+        max-height: 150px;
+        max-width: 150px;
+    }
+
+    .btn {
+        gap: 12px;
+    }
+
+    .btn button {
+        padding: 8px 18px;
+        height: 42px;
+        font-size: 15px;
+        min-width: 80px;
+    }
+
+    .gift {
+        gap: 15px;
+    }
+
+    .gift .gift1 button {
+        max-width: 100%;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    .Memories {
+        gap: 8px;
+    }
+
+    .Memories img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .promise-item {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .promise-item img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .btn-end button {
+        width: 140px;
+        font-size: 15px;
+    }
+
+    .no-msg {
+        font-size: 14px;
+    }
+}
+
+/* Small mobile phones (400px and below) */
+@media (max-width: 400px) {
+    .container, .container-h {
+        padding: 10px;
+    }
+
+    .ready, .final {
+        padding: 18px 12px;
+        border-radius: 15px;
+    }
+
+    .ready h1, .final h1 {
+        font-size: 24px;
+    }
+
+    .ready h3, .final h3 {
+        font-size: 20px;
+    }
+
+    .ready p, .final p {
+        font-size: 14px;
+    }
+
+    .ready img {
+        max-width: 120px;
+    }
+
+    .final img {
+        max-height: 130px;
+        max-width: 130px;
+    }
+
+    .btn {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn button {
+        padding: 8px 16px;
+        height: 40px;
+        font-size: 14px;
+        min-width: 120px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .gift .gift1 button {
+        height: 50px;
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .Memories {
+        gap: 6px;
+    }
+
+    .Memories img {
+        height: 90px;
+        width: 90px;
+        border-radius: 20px;
+    }
+
+    .promise-item {
+        font-size: 13px;
+        padding: 8px 6px;
+        gap: 8px;
+    }
+
+    .promise-item img {
+        height: 22px;
+        width: 22px;
+    }
+
+    .btn-end button {
+        width: 130px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .no-msg {
+        font-size: 13px;
+    }
+}
+
+/* Very small screens (350px and below) */
+@media (max-width: 350px) {
+    .ready h1, .final h1 {
+        font-size: 22px;
+    }
+
+    .ready h3, .final h3 {
+        font-size: 18px;
+    }
+
+    .ready p, .final p {
+        font-size: 13px;
+    }
+
+    .ready img {
+        max-width: 100px;
+    }
+
+    .final img {
+        max-height: 110px;
+        max-width: 110px;
+    }
+
+    .btn button {
+        font-size: 13px;
+        min-width: 100px;
+    }
+
+    .gift .gift1 button {
+        font-size: 12px;
+        height: 48px;
+    }
+
+    .Memories img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .promise-item {
+        font-size: 12px;
+    }
+
+    .promise-item img {
+        height: 20px;
+        width: 20px;
+    }
+}
