@@ -18,11 +18,19 @@
         <p>Will you be my valentine forever?</p>
         <div class="btn">
             <button onclick="window.location.href='final.html'">Yes!</button>
-            <button>No</button>
+            <button onclick="showNoMessage()">No</button>
+               <p id="no-msg" class="no-msg">
+  Nope 😤 you can’t say no to this!</p>
+
         </div>
 
         </div>
     </div>
+    <script>
+  function showNoMessage() {
+    document.getElementById("no-msg").style.display = "block";
+  }
+</script>
 
 </body>
 </html>
